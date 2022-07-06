@@ -15,7 +15,7 @@ async def echo(message: types.Message):
     st = ''
     raznitsa = bday - today
     days, seconds = raznitsa.days, raznitsa.seconds
-    hours = str(seconds // 3600-3)
+    hours = str((seconds // 3600)-3)
     minutes = str((seconds % 3600) // 60)
     seconds = str(seconds % 60)
     days = str(days)
